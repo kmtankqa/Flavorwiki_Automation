@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37602" started-at="2020-03-18T18:21:22Z" finished-at="2020-03-18T18:22:00Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37602" started-at="2020-03-18T18:21:22Z" finished-at="2020-03-18T18:22:00Z">
+      <class name="com.flavorwiki.com.testCases.VerifyMenus">
+        <test-method status="PASS" signature="verifyMenuItems()[pri:0, instance:com.flavorwiki.com.testCases.VerifyMenus@4c4d362a]" name="verifyMenuItems" duration-ms="37034" started-at="2020-03-18T23:51:22Z" description="Verify all the menu Items of left side navigation panel" finished-at="2020-03-18T23:51:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenuItems -->
+      </class> <!-- com.flavorwiki.com.testCases.VerifyMenus -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

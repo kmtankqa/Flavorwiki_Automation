@@ -1,0 +1,30 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "EP001",
+    "children" : [ {
+      "name" : "Feature1: FlavorWiki Menu's",
+      "children" : [ {
+        "name" : "Story:FlavorWiki Menu's",
+        "children" : [ {
+          "name" : "Verify all the menu Items",
+          "uid" : "6212a0e4e3892c55",
+          "parentUid" : "e652427329c6485a91b54df77c88ac1c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1584275020041,
+            "stop" : 1584275067933,
+            "duration" : 47892
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e652427329c6485a91b54df77c88ac1c"
+      } ],
+      "uid" : "c00e163d2da244c0c70e9229e1eb61ff"
+    } ],
+    "uid" : "f416afe67be4bfdcd7f18b618c24be1b"
+  } ]
+}

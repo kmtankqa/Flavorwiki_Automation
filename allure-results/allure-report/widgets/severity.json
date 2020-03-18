@@ -1,0 +1,11 @@
+[ {
+  "uid" : "6212a0e4e3892c55",
+  "name" : "Verify all the menu Items",
+  "time" : {
+    "start" : 1584275020041,
+    "stop" : 1584275067933,
+    "duration" : 47892
+  },
+  "status" : "passed",
+  "severity" : "minor"
+} ]

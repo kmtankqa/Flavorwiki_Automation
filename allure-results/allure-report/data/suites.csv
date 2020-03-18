@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Mar 15 17:53:40 IST 2020","Sun Mar 15 17:54:27 IST 2020","47892","Suite","Test","com.flavorwiki.com.testCases.VerifyMenus","com.flavorwiki.com.testCases.VerifyMenus","verifyMenuItems","Verify all the menu Items","We willl verify all the menu Items"

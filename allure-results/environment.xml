@@ -1,0 +1,14 @@
+<environment>
+    <parameter>
+        <key>Browser</key>
+        <value>Chrome</value>
+    </parameter>
+    <parameter>
+        <key>Browser.Version</key>
+        <value>80.0.39</value>
+    </parameter>
+    <parameter>
+        <key>Enviornment</key>
+        <value>Staging</value>
+    </parameter>
+</environment>

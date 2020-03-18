@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Saini",
+    "children" : [ {
+      "name" : "3708@Saini.main(1)",
+      "children" : [ {
+        "name" : "Verify all the menu Items",
+        "uid" : "6212a0e4e3892c55",
+        "parentUid" : "fb55fb9c0c583e6a06a639b241a2176a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1584275020041,
+          "stop" : 1584275067933,
+          "duration" : 47892
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fb55fb9c0c583e6a06a639b241a2176a"
+    } ],
+    "uid" : "34e34a5d5b9b25b7758573eefc246ad1"
+  } ]
+}

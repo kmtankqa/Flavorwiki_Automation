@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.flavorwiki.com.testCases.VerifyMenus",
+    "children" : [ {
+      "name" : "verifyMenuItems",
+      "uid" : "6212a0e4e3892c55",
+      "parentUid" : "ea56847ad1599e040f14846cbe507e80",
+      "status" : "passed",
+      "time" : {
+        "start" : 1584275020041,
+        "stop" : 1584275067933,
+        "duration" : 47892
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.flavorwiki.com.testCases.VerifyMenus"
+  } ]
+}
