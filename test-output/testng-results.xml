@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="37602" started-at="2020-03-18T18:21:22Z" finished-at="2020-03-18T18:22:00Z">
+  <suite name="Default suite" duration-ms="57884" started-at="2020-03-19T07:55:21Z" finished-at="2020-03-19T07:56:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="37602" started-at="2020-03-18T18:21:22Z" finished-at="2020-03-18T18:22:00Z">
-      <class name="com.flavorwiki.com.testCases.VerifyMenus">
-        <test-method status="PASS" signature="verifyMenuItems()[pri:0, instance:com.flavorwiki.com.testCases.VerifyMenus@4c4d362a]" name="verifyMenuItems" duration-ms="37034" started-at="2020-03-18T23:51:22Z" description="Verify all the menu Items of left side navigation panel" finished-at="2020-03-18T23:51:59Z">
+    <test name="Default test" duration-ms="57884" started-at="2020-03-19T07:55:21Z" finished-at="2020-03-19T07:56:18Z">
+      <class name="testCases.VerifyQRCodes">
+        <test-method status="PASS" signature="verifyQRCodeGenrated()[pri:0, instance:testCases.VerifyQRCodes@2de366bb]" name="verifyQRCodeGenrated" duration-ms="57193" started-at="2020-03-19T07:55:21Z" description="Verify QR code is generated" finished-at="2020-03-19T07:56:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMenuItems -->
-      </class> <!-- com.flavorwiki.com.testCases.VerifyMenus -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- verifyQRCodeGenrated -->
+      </class> <!-- testCases.VerifyQRCodes -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

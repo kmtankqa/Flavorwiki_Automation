@@ -1,19 +1,21 @@
-package com.flavorwiki.com.testCases;
+package testCases;
 
 import java.awt.HeadlessException;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
-import org.apache.commons.lang3.RandomStringUtils;
+
+import org.apache.commons.lang.RandomStringUtils;
 import org.testng.annotations.Test;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import utils.ConfigFileReader;
-import utils.Locators;
-import utils.Services;
+import locators.QRCodes;
+import utilities.ConfigFileReader;
+import utilities.Services;
 
 public class VerifyQRCodes {
 
@@ -32,18 +34,18 @@ public class VerifyQRCodes {
 
 		Services.initializeDriver();
 		Services.login();
-		Services.waitForElementToBeClickable(Locators.qrCode);
-		Services.clickElementByXPath(Locators.qrCode);
-		Services.clickElementByXPath(Locators.createQRBTTN);
-		Services.sendKeysbyXpath(Locators.firstName, "QRCODE "+random);
-		Services.clickElementByXPath(Locators.SurveyBttn);
-		Services.getDataFromList(Locators.targetOptionList, "TEST", Services.getDriver());
-		Services.clickElementByXPath(Locators.qrSaveBttn);
-		Services.copyText(Services.getDriver(), Locators.copyBttn);
+		Services.waitForElementToBeClickable(QRCodes.qrCode);
+		Services.clickElementByXPath(QRCodes.qrCode);
+		Services.clickElementByXPath(QRCodes.createQRBTTN);
+		Services.sendKeysbyXpath(QRCodes.firstName, "QRCODE "+random);
+		Services.clickElementByXPath(QRCodes.SurveyBttn);
+		Services.getDataFromList(QRCodes.targetOptionList, "TEST", Services.getDriver());
+		Services.clickElementByXPath(QRCodes.qrSaveBttn);
+		Services.copyText(Services.getDriver(), QRCodes.copyBttn);
 		Services.handleWindow(Services.myText, Services.getDriver());
-		Services.clickElementByXPath(Locators.qrCode);
-		Services.waitForElementToBeClickable(Locators.table);
-		Services.verifyDataFromList(Locators.verifyQRList, "QRCODE "+random, Services.getDriver());
+		Services.clickElementByXPath(QRCodes.qrCode);
+		Services.waitForElementToBeClickable(QRCodes.table);
+		Services.verifyDataFromList(QRCodes.verifyQRList, "QRCODE "+random, Services.getDriver());
 		Services.closeBrowser();
 
 	}

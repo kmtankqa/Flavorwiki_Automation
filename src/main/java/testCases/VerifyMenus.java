@@ -1,17 +1,19 @@
-package com.flavorwiki.com.testCases;
+package testCases;
 
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import utils.ConfigFileReader;
-import utils.Locators;
-import utils.Services;
+import locators.Common;
+import utilities.ConfigFileReader;
+import utilities.ScreenshotListener;
+import utilities.Services;
 
 
 @Listeners({ScreenshotListener.class})
@@ -33,15 +35,15 @@ public class VerifyMenus {
 
 		Services.initializeDriver();
 		Services.login();
-		Services.assert_element_textPresent(config.expectedTextDashBoard(), Locators.DashBoard);
-		Services.clickElementByXPath(Locators.surveyLabel);
-		Services.assert_element_present(Locators.createSurveyBTTN);
-		Services.clickElementByXPath(Locators.qrCode);
-		Services.assert_element_present(Locators.createQRBTTN);
-		Services.clickElementByXPath(Locators.termUseLBL);
-		Services.assert_element_textPresent(config.expectedTextTerms(), Locators.textTermAndUse);
-		Services.clickElementByXPath(Locators.privacyLBL);
-		Services.assert_element_textPresent(config.expectedTextPrivacy(), Locators.privacyPolicyText);
+		Services.assert_element_textPresent(config.expectedTextDashBoard(), Common.DashBoard);
+		Services.clickElementByXPath(Common.surveyLabel);
+		Services.assert_element_present(Common.createSurveyBTTN);
+		Services.clickElementByXPath(Common.qrCode);
+		Services.assert_element_present(Common.createQRBTTN);
+		Services.clickElementByXPath(Common.termUseLBL);
+		Services.assert_element_textPresent(config.expectedTextTerms(), Common.textTermAndUse);
+		Services.clickElementByXPath(Common.privacyLBL);
+		Services.assert_element_textPresent(config.expectedTextPrivacy(), Common.privacyPolicyText);
 		Services.closeBrowser();
 
 	}

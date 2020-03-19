@@ -1,4 +1,6 @@
-package utils;
+package utilities;
+
+import static utilities.Constants.WAIT_EXPLICIT_SEC;
 
 import java.awt.HeadlessException;
 import java.awt.Toolkit;
@@ -7,6 +9,7 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +19,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import static testngConstants.Constants.WAIT_EXPLICIT_SEC;
+
+import locators.Common;
 
 public class Services {
 
@@ -59,7 +63,7 @@ public class Services {
 	public static void clickElementByXPath(By Xpath) {
 
 		waitForElementToBeClickable(Xpath);
-		Locators.getWebElement(driver, Xpath).click();
+		Common.getWebElement(driver, Xpath).click();
 
 	}
 
@@ -112,7 +116,7 @@ public class Services {
 
 			driver.manage().window().maximize();
 			driver.get(config.getURL());
-			Services.waitForElementToBeClickable(Locators.username);
+			Services.waitForElementToBeClickable(Common.username);
 
 			System.out.println("try end");
 
@@ -121,13 +125,13 @@ public class Services {
 			System.out.println("catch start");
 
 			driver.navigate().refresh();
-			Services.waitForElementToBeClickable(Locators.username);
+			Services.waitForElementToBeClickable(Common.username);
 
 		} finally {
 
-			driver.findElement(Locators.username).sendKeys(config.getvalidUsername());
-			driver.findElement(Locators.password).sendKeys(config.getvalidPassword());
-			driver.findElement(Locators.loginbutton).click();
+			driver.findElement(Common.username).sendKeys(config.getvalidUsername());
+			driver.findElement(Common.password).sendKeys(config.getvalidPassword());
+			driver.findElement(Common.loginbutton).click();
 		}
 
 	}
@@ -147,8 +151,8 @@ public class Services {
 	// This method is used to hold the list of elements
 	public static void getDataFromList(By List, String Text, WebDriver driver) {
 
-		waitForElementToBeClickable(Locators.targetOption);
-		driver.findElement(Locators.targetOption).click();
+		waitForElementToBeClickable(Common.targetOption);
+		driver.findElement(Common.targetOption).click();
 
 		List<WebElement> list = driver.findElements(List);
 
@@ -247,7 +251,7 @@ public class Services {
 	public static void sendKeysbyXpath(By Xpath, CharSequence... keysToSend) {
 		WebDriverWait wait = new WebDriverWait(getDriver(), WAIT_EXPLICIT_SEC);
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(Xpath));
-		WebElement wl = Locators.getWebElement(driver, Xpath);
+		WebElement wl = Common.getWebElement(driver, Xpath);
 		wl.clear();
 		wl.sendKeys(keysToSend);
 	}

@@ -1,10 +1,10 @@
-package utils;
+package locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Locators {
+public class Surveys {
 
 	public static By username = By.xpath("//input[@placeholder='Username']");
 	public static By password = By.xpath("//input[@placeholder='Password'] ");

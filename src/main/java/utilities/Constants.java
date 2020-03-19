@@ -1,6 +1,6 @@
-package testngConstants;
+package utilities;
 
-import utils.ConfigFileReader;
+import utilities.ConfigFileReader;
 
 public class Constants {
 

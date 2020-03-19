@@ -1,7 +1,8 @@
-package com.flavorwiki.com.testCases;
+package utilities;
 
-import io.qameta.allure.Attachment;
-import utils.Services;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -11,9 +12,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+
+import io.qameta.allure.Attachment;
+import utilities.Services;
 
 
 public class ScreenshotListener extends TestListenerAdapter {
